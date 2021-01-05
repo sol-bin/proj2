@@ -3,7 +3,7 @@
 #section{}
 #footer{}
 
-/*********************header****************************/
+
   
 
 /*********************section****************************/
@@ -11,8 +11,46 @@
     /* overflow: hidden;*/position: relative; 
     margin:auto;width:100%;
      }
- #slide .container{position: relative; width:3000px; left:0px;} 
- #slide .container > div{width:100%;} 
- #slide img{width:100%;}
+#slide .container{position: relative; width:100%; left:0px;} 
+#slide .container > div{width:100%; float: left;} 
+#slide img{width:100%;}
 
-/*********************footer****************************/
+/*******sec2*********/
+#sec2 .box1{
+    position: relative;
+    margin:110px 0;
+}
+#sec2 .box1 img{
+    width: 1000px;
+    height: 700px;
+}
+#sec2 .box2{
+    width: 600px;
+    height: 520px;
+    background-color: #fff;
+    position: absolute;
+  /*  left: 0;
+    top: 0; */
+}
+#sec2 .box2 .txt1{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    margin-top: 90px;
+}
+#sec2 .box2 .txt2{
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+#sec2 .box2 .txt3{
+    font-size: 1.25rem;
+    padding-bottom: 35px;
+    border-bottom: 1px solid#aaa;
+}
+#sec2 .box2 .txt4{
+    font-size: 1rem;
+    margin-top: 50px;
+}
+#sec2 .box2 .txt5{
+    font-size: 0.9rem;
+    margin-top: 10px;
+}

@@ -11,7 +11,7 @@ $(function(){
 
       $(function(){
         var slide;
-        slide = setInterval(function(){
+        slide = setInterval(function(){// setInterval는 정해진 시간 동안자동으로 실행되게 하는것이다
           $('#slide .container > div:first-child').animate({
               'margin-left':'-360px'},600,function(){
                 $('#slide .container').append(
