@@ -8,8 +8,9 @@
 <title>STX중공업 정솔빈</title>
 
 <link href="css/common.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="./css/slick.css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="./css/slick.css">
+
 
 <script src="./js/jquery-3.1.1.min.js" type="text/javascript"></script>
 <script src="http://code.jquery.com/jquery-migrate-3.0.0.js"></script>
@@ -110,14 +111,15 @@
     
     </div><!--inner-->
   </header>
-  <section id="sec1" class="lazy slider">
+  <section id="sec1">
     <div id="main_image"> 
       <div id="slide"> 
-          <div class="container"> 
-              <div class="slide_photo1"><img src="images/main1.png"></div> 
-              <div class="slide_photo2"><img src="images/main2.png"></div> 
-              <div class="slide_photo3"><img src="images/main3.png"></div> 
-          </div> 
+        <div class="lazy"> 
+          <div><img src="images/main1.png"></div>
+          <div><img src="images/main2.png"></div>
+          <div><img src="images/main3.png"></div>
+        </div>
+        
       </div>
   </div>
   </section>
@@ -137,38 +139,87 @@
         대형디젤 엔진을 생산하여 세계 주요 조선소와<br>
          발전소에 공급하고 있습니다.</p>
          <p class="arrow1">
-           <img src="images/left-arrow-2.png" alt="화살표입니다.">
+           <img src="images/height-arrow.png" alt="화살표입니다.">
          </p>
          <p class="arrow2">
-          <img src="images/left-arrow-1.png" alt="화살표입니다.">
+          <img src="images/down-arrow.png" alt="화살표입니다.">
          </p>
         </div>
     </div>
   </section>
   <section id="sec3">
-    <img src="images/social.png" alt="사회공헌 이미지 입니다.">
+    <div class="inner">
+      <div class="box">
     <p class="txt1">Social Value</p>
     <p class="txt2">사회공헌</p>
+  </div>
+  <div class="b_box">
     <div class="box1">
       <img src="images/social1.png" alt="사랑나눔 이미지입니다">
+      <p>사랑나눔</p>
       <button>
       <a href="#">바로가기</a>
     </button>
     </div>
     <div class="box2">
       <img src="images/social2.png" alt="환경보호 이미지입니다">
+      <p>환경보호</p>
       <button>
         <a href="#">바로가기</a>
       </button>
     </div>
     <div class="box3">
       <img src="images/social3.png" alt="나눔의 실천 이미지입니다">
+      <p>나눔의 실천</p>
       <button>
         <a href="#">바로가기</a>
       </button>
     </div>
+    </div>
+  </div>
   </section>
-  <section id="sec4"></section>
+  <section id="sec4">
+   <article>
+     <p>최근소식 News</p>
+     <div class="box1">
+       <img src="images/LGIP.png" alt="최근 소식 이미지입니다.">
+     </div>
+     <div class="box2">
+       <p>STX-MAN, LGIP 시운전 성공</p>
+       <span>2020-01-17</span>
+     </div>
+   </article>
+   <article>
+     <div class="m_img">
+       <img src="">
+      </div>
+      <div class="m_txt">
+       <p class="title">STX중공업, 1억불 규모 이라크 가스처리설비 수주 </p>
+       <p class="txt"> - STX중공업, 약 5,000억원 규모 아카스 파이프라인 프로젝트 계약 체결 - 이라크 등 해외 플랜트 시장 수주활동에 더욱 박차를 가할 것  STX중공업이 해외건설 시장의 중심으로 발돋움하고 있는 이라크 지역에서 잇따라 수주에 성공하며 해외 플랜트 시장 진출에...</p>
+      </div>
+      <div class="m_txt">
+        <p class="title">STX중공업, 1억불 규모 이라크 가스처리설비 수주 </p>
+        <p class="txt"> - STX중공업, 약 5,000억원 규모 아카스 파이프라인 프로젝트 계약 체결 - 이라크 등 해외 플랜트 시장 수주활동에 더욱 박차를 가할 것  STX중공업이 해외건설 시장의 중심으로 발돋움하고 있는 이라크 지역에서 잇따라 수주에 성공하며 해외 플랜트 시장 진출에...</p>
+       </div>
+   </article>
+   <article>
+     <div>
+       <img src="">
+     </div>
+     <div>
+       <p>네트워크</p>
+       <dt><a href="#">교통안내</a></dt>
+       <dt><a href="#">위치안내</a></dt>
+       <dd>
+         <a href="#">창원본사</a>
+         <a href="#">제 1 공장</a>
+         <a href="#">제 2 공장</a>
+         <a href="#">대구공장</a>
+         <a href="#">서울사무소</a>
+       </dd>
+     </div>
+   </article>
+  </section>
   <footer id="footer"></footer>
 </div>
 </body>

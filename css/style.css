@@ -11,14 +11,14 @@
     /* overflow: hidden;*/position: relative; 
     margin:auto;width:100%;
      }
-#slide .container{position: relative; width:100%; left:0px;} 
-#slide .container > div{width:100%; float: left;} 
-#slide img{width:100%;}
+#slide .lazy{position: relative; width:100%; left:0px;} 
+#slide .lazy > div{width:100%; float: left;} 
+#slide img{width:100%;margin-bottom: 110px;}
 
 /*******sec2*********/
 #sec2 .box1{
     position: relative;
-    margin:110px 0;
+    margin-bottom: 110px;
 }
 #sec2 .box1 img{
     width: 1000px;
@@ -29,13 +29,15 @@
     height: 520px;
     background-color: #fff;
     position: absolute;
-  /*  left: 0;
-    top: 0; */
+    padding-left: 40px;
+    left: 800px;
+    top:1120px ; 
 }
 #sec2 .box2 .txt1{
     font-size: 1rem;
     margin-bottom: 20px;
     margin-top: 90px;
+    
 }
 #sec2 .box2 .txt2{
     font-size: 3rem;
@@ -53,4 +55,97 @@
 #sec2 .box2 .txt5{
     font-size: 0.9rem;
     margin-top: 10px;
+}
+#sec2 .box2 .arrow1{
+    position: absolute;
+    left: 400px;
+    top: 230px;
+}
+#sec2 .box2 .arrow1 img{
+    width: 40px;
+    height: 40px;
+}
+#sec2 .box2 .arrow2{
+    position: absolute;
+    left: 400px;
+    top: 290px;
+}
+#sec2 .box2 .arrow2 img{
+    width: 40px;
+    height: 40px;
+}
+
+
+/*******sec3*********/
+#sec3{
+   padding-top: 200px;
+   padding-bottom: 100px;
+   background: url(../images/social.png) no-repeat;
+   background-size:cover;
+   margin-bottom: 90px;
+}
+#sec3 .box{
+   color: #fff;
+   text-align: center;
+}
+#sec3 .box .txt1{
+    font-size:4.3rem ;
+    margin-bottom: 20px;
+}
+#sec3 .box .txt2{
+    margin-bottom: 90px;
+}
+#sec3 .b_box{
+    display: inline-block;
+}
+#sec3 .box1{
+    float: left;
+    width: 370px;
+    height: 340px;
+    margin-right: 60px;
+    text-align: center;
+}
+#sec3 .box1 img{
+    width: 85px;
+    height: 95px;
+    margin-bottom: 20px;
+}
+#sec3 .box1 p{
+    margin-bottom: 35px;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+#sec3 .box2{
+    float: left;
+    width: 370px;
+    height: 340px;
+    margin-right: 60px;
+    text-align: center;
+}
+#sec3 .box2 img{
+    width: 85px;
+    height: 95px;
+    margin-bottom: 20px;
+}
+#sec3 .box2 p{
+    margin-bottom: 35px;
+    font-size: 1.6rem;
+    color: #fff;
+}
+#sec3 .box3{
+    float: left;
+    width: 370px;
+    height: 340px;
+    text-align: center;
+}
+#sec3 .box3 img{
+    width: 85px;
+    height: 95px;
+    margin-bottom: 20px;
+}
+#sec3 .box3 p{
+    margin-bottom: 35px;
+    font-size: 1.6rem;
+    color: #fff;
 }
