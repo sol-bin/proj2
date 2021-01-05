@@ -4,9 +4,15 @@
 #footer{}
 
 /*********************header****************************/
-
+  
 
 /*********************section****************************/
-
+#main_image{
+    /* overflow: hidden;*/position: relative; 
+    margin:auto;width:100%;
+     }
+ #slide .container{position: relative; width:3000px; left:0px;} 
+ #slide .container > div{width:100%;} 
+ #slide img{width:100%;}
 
 /*********************footer****************************/
