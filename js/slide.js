@@ -12,11 +12,11 @@ $(function(){
       $(function(){
         var slide;
         slide = setInterval(function(){// setInterval는 정해진 시간 동안자동으로 실행되게 하는것이다
-          $('#slide .container > div:first-child').animate({
+          $('#slide .lazy > div:first-child').animate({
               'margin-left':'-360px'},600,function(){
-                $('#slide .container').append(
-                    $('#slide .container > div:first-child'));
-                $('#slide .container > div:last-child').css({'margin-left':0})
+                $('#slide .lazy').append(
+                    $('#slide .lazy > div:first-child'));
+                $('#slide .lazy > div:last-child').css({'margin-left':0})
               });
           
         },2000)//slide end
