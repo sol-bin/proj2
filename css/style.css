@@ -149,3 +149,107 @@
     font-size: 1.6rem;
     color: #fff;
 }
+
+/*******sec4*********/
+#sec4 .b_box1{
+    width:calc(60% - 10px);
+    height: 700px;
+}
+#sec4 .b_box1 > p{
+    font-size: 2rem;
+    margin-bottom: 35px;
+}
+#sec4 .box1 img{
+    width: 650px;
+    height: 480px;
+}
+#sec4 .box2{
+    background-color: #08494E;
+    width: 650px;
+    height: 120px;
+}
+#sec4 .box2 > p{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    color: #fff;
+    padding-left: 30px;
+}
+#sec4 .box2 span{
+    font-size: 1rem;
+    color: #fff;
+    padding-left: 30px;
+}
+#sec4 .b_box2{
+    float: right;
+    width: 40%;
+}
+
+#sec4 .m_img img{
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+#sec4 .m_txt{
+    width:358px;
+    height:135px ;
+    margin-left: 10px;
+    float: right;
+}
+#sec4 .m_txt .title{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+#sec4 .m_txt .txt{
+    font-size: 0.9rem;
+}
+#sec4 .m_txt2{
+    margin-top: 20px;
+}
+#sec4 .b_box2 .b_net1{
+    height: 340px;
+    transform: translate(0, -600px);
+}
+#sec4 .b_box2 .b_net2{
+    margin-top: 30px;
+    transform: translate(0, -600px);
+}
+#sec4 .b_box2 .net{
+    float: right;
+}
+#sec4 .b_box2 .net > p{
+    font-size:1.25rem ;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+#sec4 .b_box2 .net dt{
+    display: inline-block;
+}
+#sec4 .b_box2 .net .red{
+    border: 1px solid red;
+    border-radius: 18px;
+    background-color: red;
+    color: #fff;
+    width: 80px;
+    height: 35px;
+    font-size: 0.9rem;  
+    text-align: center;
+    line-height:35px; 
+    margin-right: 4px;  
+}
+#sec4 .b_box2 .net .wit{
+    border: 1px solid#757575;
+    border-radius: 18px;
+    color: #757575;
+    width: 80px;
+    height: 35px;
+    font-size: 0.9rem;  
+    text-align: center;
+    line-height:35px;   
+}
+#sec4 .b_box2 .net dd{
+    font-size: 0.8rem;
+    margin-top: 10px;
+}

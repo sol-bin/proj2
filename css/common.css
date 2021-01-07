@@ -115,3 +115,43 @@ button{outline:0}
       background-color: #000;
 
 }
+/*footer*/
+#footer{
+      background-color: #222;
+      height: 180px;
+}
+#footer .foot1{
+      padding: 17px 40px 24px;
+      border-bottom: 1px solid #666;
+}
+#footer .logo_img img{
+      display: block;
+      width: 120px;
+      height: 40px;
+}
+#footer .logo_txt{
+      margin-top: 10px;
+      float: right;
+
+}
+#footer .logo_txt .txt{
+          
+}
+#footer .logo_txt .txt > li{
+      padding: 0 20px;
+      color: #666;
+      font-size: 0.9rem;
+      float: left;
+}
+
+#footer .sns_img img{
+      width: 20px;
+      height: 20px;
+}
+#footer .sns_img > li{
+      float: left;
+      margin-left: 30px;
+}
+#footer .foot2 .stx > li{
+      float: left; 
+}
