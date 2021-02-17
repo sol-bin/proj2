@@ -24,6 +24,15 @@ input, textarea, input::placeholder, textarea::placeholder {
 button{outline:0}
 .sound_only{display: block; text-indent: -999999999999999px; height: 0;}
 
+  /* 네비1,2,3 공통 */ 
+  .navi .depth1{position: absolute;width:100%;top:50px;left:0;}
+  .navi .depth1 >li {float:left;width:15%;background-color:#fff;}
+  .navi .depth1 >li > a{display: block;text-align: center;background-color:#fff;
+                 color:#333;font-size: 1.1rem;font-weight: bold;padding:10px 0;line-height: 1em;}
+  .navi .depth1 >li> ul {font-size:0.9rem;line-height: 2em;box-sizing: border-box; text-align: center;}
+  .navi .depth1 >li> ul:before{content: '';display: block;height:30px;}
+  
+  .navi .depth1 .depth2 ul{padding-top:1em;font-size:0.8rem}
 
 
 
@@ -35,6 +44,7 @@ button{outline:0}
 
 /*header*/
 #header #logo{
+           display: block;
            float: left;
            width: 150px;
 }
@@ -42,79 +52,53 @@ button{outline:0}
        width: 100%;
 }
 
-/*nav4*/
-#nav4{float: right;}
-#header .inner{position: relative;}
-#nav4 .depth1{float: left;}
-#nav4 .depth1 > li {float:left; padding: 0 35px;}
-#nav4 .depth1 > li > a {
-      display: block;
-      text-align: center;
-      font-size:0.9rem;
-      color:#333;
-      font-weight: bold;
-       line-height: 75px;
-      }
-#nav4 .depth1{position: static;} 
-#nav4 .nav_box {
-      position:absolute;
-      top :78px;
-      left:0;
-      width:100%;
-      z-index:96;
-      display: none; color: #fff;
-      padding:20px 0;
+
+ /* 네비2 */   
+ #nav2{float: left;width: calc(100% - 150px);position: relative;}      
+ #nav2 .depth1 {
+       z-index:98;height:calc(1.1rem + 19px);overflow:hidden;
+      transition: height 1s;border-bottom:1px solid transparent;
+      position: absolute;width:100%;top: 20px;left:180px;
+}  
+#nav2 .depth1:hover{height:calc(1.1rem + 20px + 200px);}
+
+#nav2 .depth1 ul {height:200px;opacity: 0;transition: opacity 1s;padding:0 10px; }
+#nav2 .depth1 li:first-child ul{}
+#nav2 .depth1:hover ul{opacity: 1;}
+   
+
+#nav2 .KOR{
+      text-align: right;
+      padding-top: 15px;
 }
- #nav4 .depth1>li:hover .nav_box{display: block;}
-#nav4 .nav_box .depth2{
-      width:100%;
-      margin:0 auto;
-      position: relative;
-      text-align: center;
-      padding-left: 100px;
-      box-sizing: border-box;
-}
-#nav4 .nav_box .depth2:after{
-      content: '';
-      display: block;
-      clear: both;
-}
-#nav4 .depth2 > li{
-      display: inline-block;
-      box-sizing: border-box;
-      padding:10px;
-}
-#nav4 .KOR a{
-    float: right;
+#nav2 .KOR a{
     display: inline-block;
     width: 60px;
     line-height: 36px;
     border-bottom: 1px solid #333;
     border-right: none;
-    vertical-align: middle;
+    margin-right: 30px;
+    text-align: left;
       /*float: right;
       border-bottom: 1px solid#aaa;
       width:66px;*/
 }
-#nav4 .i_con{
-      float: right;
-      margin-left: 20px;
-      margin-top: 5px;}
-#nav4 .i_con.bar_o{
-      display: block;
-      width: 25px;
-      height: 2px;
+#nav2 .all_nav {
+      border: none;
+      background: none;
+}
+#nav2 .all_nav .span1{
+      display: block; width: 30px; height: 2px;
       background-color: #000;
       margin-bottom: 3px;
-      margin-top: 5px;
 }
-#nav4 .i_con .bar_t{
-      display: block;
-      width: 25px;
-      height: 4px;
+#nav2 .all_nav .span2{
+      display: block; width: 30px; height: 5px;
       background-color: #000;
-
 }
+
+
+
 /*footer*/
 #footer{
       background-color: #222;
@@ -122,13 +106,17 @@ button{outline:0}
 }
 #footer .foot1{
     width: 100%;
-    height: 77px;
     padding: 17px 40px 24px;
       /*
       height: 70px;
       width: 100%;
       padding: 17px 40px 24px;
       */
+}
+#footer .foot1::after{
+      clear: both;
+      display: block;
+      content: '';
 }
 #footer .logo_img{
       float: left;
@@ -168,9 +156,13 @@ button{outline:0}
       margin-left: 20px;
 }
 #footer .foot2{
-      height: 103px;
       padding: 24px 40px;
       border-top: 1px solid #333;
+}
+#footer .foot2::after{
+      clear: both;
+      display: block;
+      content: '';
 }
 #footer .stx_img{
       box-sizing: border-box;
@@ -208,4 +200,18 @@ button{outline:0}
       display: block;
       width: 55px;
       height: 15px;
+}
+#footer .foot2 dl{
+      margin-top: 16px;
+}
+#footer .foot2 dt{
+      font-size: 14px;
+      color: #666;
+      float: left;
+}
+#footer .foot2 dd{
+      display: inline-block;
+      font-size: 13px;
+      color: #666;
+      float: right;
 }

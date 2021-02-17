@@ -1,24 +1,27 @@
 $(function(){
-    $(".lazy").slick({
+    $("#sec1 .lazy").slick({
         lazyLoad: 'ondemand', // ondemand progressive anticipated
         infinite: true,
         arrows : false,
         dots : true,
         autoplay : true,
-        autoplaySpeed : 5000,
-        pauseOnHover : true
+        autoplaySpeed : 3000,//시간 (초)
+        pauseOnHover : false//true 라고 하면 마우스를 오버 했을때 작동이 되지않고 그것이 싫으면
+                            //false 라고 해 놓는다.
       });
 
-      $(function(){
-        var slide;
-        slide = setInterval(function(){// setInterval는 정해진 시간 동안자동으로 실행되게 하는것이다
-          $('#slide .lazy > div:first-child').animate({
-              'margin-left':'-360px'},600,function(){
-                $('#slide .lazy').append(
-                    $('#slide .lazy > div:first-child'));
-                $('#slide .lazy > div:last-child').css({'margin-left':0})
-              });
-          
-        },2000)//slide end
-    }) //jq end
+      $("#sec2 .lazy").slick({
+        lazyLoad: 'ondemand', // ondemand progressive anticipated
+        infinite: true,
+        arrows : true,
+        dots : false,
+        autoplay : true,
+        autoplaySpeed : 3000,//시간 (초)
+        pauseOnHover : false//true 라고 하면 마우스를 오버 했을때 작동이 되지않고 그것이 싫으면
+                            //false 라고 해 놓는다.
+      });
+
+
+
+
 })

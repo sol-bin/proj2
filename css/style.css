@@ -12,13 +12,61 @@
     margin:auto;width:100%;
      }
 #slide .lazy{position: relative; width:100%; left:0px;} 
-#slide .lazy > div{width:100%; float: left;} 
-#slide img{width:100%;margin-bottom: 110px;}
+#slide img{width:100%;}
+
+
+
+
+/*******sec1*********/
+#sec1{clear: both;margin-bottom:110px}
+#sec1 .inner{
+    position: relative;
+}
+#sec1 .txt_box {
+    width:100%;
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    color: #fff;
+    z-index:99999
+}
+#sec1 .txt_box::after{
+    clear: both;
+    display: block;
+    content: '';
+}
+
+#sec1 .txt_box .txt1{
+    font-size:4.5rem;
+    margin-bottom: 40px;
+}
+#sec1 .txt2{
+    font-size: 1.2rem;
+    margin-bottom: 65px;
+}
+#sec1 .txt3{
+    font-size: 4rem;
+}
+#sec1 .inner::after{
+    clear: both;
+    display: block;
+    content: '';
+}
+
+
 
 /*******sec2*********/
+#sec2 .inner{position: relative;}
+#sec2::after{
+    clear: both;
+    display: block;
+    content: '';
+}
+
 #sec2 .box1{
-    position: relative;
     margin-bottom: 110px;
+    position: relative;
 }
 #sec2 .box1 img{
     width: 1000px;
@@ -30,8 +78,14 @@
     background-color: #fff;
     position: absolute;
     padding-left: 40px;
-    left: 800px;
-    top:1120px ; 
+    top: 100px;
+    right: 0;
+    
+}
+#sec2 .box2::after{
+    clear: both;
+    display: block;
+    content: '';
 }
 #sec2 .box2 .txt1{
     font-size: 1rem;
@@ -58,8 +112,9 @@
 }
 #sec2 .box2 .arrow1{
     position: absolute;
-    left: 400px;
+    left: 550px;
     top: 230px;
+    color: #aaa;
 }
 #sec2 .box2 .arrow1 img{
     width: 40px;
@@ -67,7 +122,7 @@
 }
 #sec2 .box2 .arrow2{
     position: absolute;
-    left: 400px;
+    left: 550px;
     top: 290px;
 }
 #sec2 .box2 .arrow2 img{
@@ -149,11 +204,21 @@
     font-size: 1.6rem;
     color: #fff;
 }
-
+#sec3 button{
+    background: none;
+    color: #fff;
+    border: none;
+}
 /*******sec4*********/
+#sec4::after{
+    clear: both;
+    display: block;
+    content: '';
+}
 #sec4 .b_box1{
     width:calc(60% - 10px);
     height: 700px;
+    float: left;
 }
 #sec4 .b_box1 > p{
     font-size: 2rem;
@@ -183,8 +248,13 @@
 #sec4 .b_box2{
     float: right;
     width: 40%;
+    padding-top: 65px;
 }
-
+#sec4 .b_box2:after{
+    clear: both;
+    display: block;
+    content: '';
+}
 #sec4 .m_img img{
     width: 100px;
     height: 100px;
@@ -209,14 +279,20 @@
 }
 #sec4 .b_box2 .b_net1{
     height: 340px;
+}
+/*
+#sec4 .b_box2 .b_net1{
+    height: 340px;
     transform: translate(0, -600px);
 }
 #sec4 .b_box2 .b_net2{
     margin-top: 30px;
     transform: translate(0, -600px);
 }
+*/
 #sec4 .b_box2 .net{
     float: right;
+    transform: translateX(-85px);
 }
 #sec4 .b_box2 .net > p{
     font-size:1.25rem ;
