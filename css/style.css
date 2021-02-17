@@ -293,7 +293,7 @@
 */
 #sec4 .b_box2 .net{
     float: right;
-    transform: translateX(-85px);
+    transform: translateX(-10px);
 }
 #sec4 .b_box2 .net > p{
     font-size:1.25rem ;
@@ -329,4 +329,7 @@
 #sec4 .b_box2 .net dd{
     font-size: 0.8rem;
     margin-top: 10px;
+}
+#sec4 .b_box2 .net dd a{
+    margin-right: 15px;
 }
