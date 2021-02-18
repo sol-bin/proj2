@@ -106,7 +106,6 @@ button{outline:0}
       height: 180px;
 }
 #footer .foot1{
-    width: 100%;
     padding: 17px 40px 24px;
       /*
       height: 70px;
@@ -120,12 +119,12 @@ button{outline:0}
       content: '';
 }
 #footer .logo_img{
+      padding-top: 10px;
       float: left;
       box-sizing: border-box;
 }
 #footer .logo_img img{
       width: 120px;
-      height: 40px;
       display: block;
 }
 #footer .logo_txt{
@@ -175,44 +174,35 @@ button{outline:0}
 #footer .stx .f_img1 img{
       display: block;
       width: 45px;
-      height: 30px;
 }
 #footer .stx .f_img2 img{
       display: block;
       width: 55px;
-      height: 15px;
 }
 #footer .stx .f_img3 img{
       display: block;
       width: 55px;
-      height: 15px;
 }
 #footer .stx .f_img4 img{
       display: block;
       width: 55px;
-      height: 15px;
 }
 #footer .stx .f_img5 img{
       display: block;
       width: 55px;
-      height: 15px;
 }
 #footer .stx .f_img6 img{
       display: block;
       width: 55px;
-      height: 15px;
 }
-#footer .foot2 dl{
-      margin-top: 16px;
-}
-#footer .foot2 dt{
-      font-size: 14px;
-      color: #666;
+#footer .txt_box{
       float: left;
 }
-#footer .foot2 dd{
+#footer .txt_box p{
       display: inline-block;
-      font-size: 13px;
-      color: #666;
-      float: right;
+      padding-top: 10px;
+      font-size: 0.8rem;
+}
+#footer .txt_box .txt2{
+      margin-left: 800px;
 }
